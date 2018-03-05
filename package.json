@@ -1,0 +1,22 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "a cool tweet app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BxBomber999/twitter-js.git"
+  },
+  "author": "Peter Coyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BxBomber999/twitter-js/issues"
+  },
+  "homepage": "https://github.com/BxBomber999/twitter-js#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
