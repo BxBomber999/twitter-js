@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-let data = [{ name: 'Peter Coyle',
+let data = [{ name: 'Peter',
 content: 'booogers. #fullstacklove #codedreams' }];
 
 

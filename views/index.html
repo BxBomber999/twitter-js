@@ -16,7 +16,18 @@
 
       <!-- display tweets here -->
       {% for tweet in tweets %}
-        <li>{{tweet.content}}</li>
+        <li>
+          <div class='tweetContainer'>
+            <img src="images/testpic.JPG" class='userPic' alt="#">
+            <span class='user-name'>
+                {{tweet.name}}
+            </span>
+            <p></p>
+            <span class='tweetContent'>
+                {{tweet.content}}
+            </span>
+          </div>
+        </li>
       {% endfor %}
 
     </div>
