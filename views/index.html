@@ -1,8 +1,4 @@
-<!-- Template inheritance is a way to make it easy to reuse templates. When writing a template, you can define "blocks" that child templates can override. The inheritance chain can be as long as you like. -->
 
-<!-- Note that the top of index.html says {% extends "layout.html" %} This is the inheritance mentioned earlier. When Nunjucks goes to render index, it will automatically embed that template inside the layout template (at the {% block content %} tag) and render both as a single file. Other pages will also be able to extend layout in this fashion, meaning we only have to worry about each page's unique content. -->
-
-<!-- Extends means this template will replace a section of the "layout.html" -->
 {% extends "layout.html" %}
 
 {% block content %}
@@ -27,3 +23,4 @@
   </div>
 
 {% endblock %}
+
