@@ -1,0 +1,29 @@
+<!-- Template inheritance is a way to make it easy to reuse templates. When writing a template, you can define "blocks" that child templates can override. The inheritance chain can be as long as you like. -->
+
+<!-- Note that the top of index.html says {% extends "layout.html" %} This is the inheritance mentioned earlier. When Nunjucks goes to render index, it will automatically embed that template inside the layout template (at the {% block content %} tag) and render both as a single file. Other pages will also be able to extend layout in this fashion, meaning we only have to worry about each page's unique content. -->
+
+<!-- Extends means this template will replace a section of the "layout.html" -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <div class="page-header">
+    <h1>Welcome to Twitter.js!</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="https://pbs.twimg.com/profile_images/2450268678/olxp11gnt09no2y2wpsh_normal.jpeg"><br>
+      <b>Your Name</b><br>
+      100 followers
+    </div>
+    <div class="col-md-9">
+
+      <!-- display tweets here -->
+      {% for tweet in tweets %}
+        <li>{{tweet.content}}</li>
+      {% endfor %}
+
+    </div>
+  </div>
+
+{% endblock %}
