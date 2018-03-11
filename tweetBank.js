@@ -1,3 +1,4 @@
+'use strict'
 const _ = require('lodash');
 
 // We are going to store the tweets in the data array, but we do not want to make this array directly accessible to the rest of our app; it will safely remain as a private variable inside tweetBank.js.
